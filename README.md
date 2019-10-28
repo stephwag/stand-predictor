@@ -41,5 +41,5 @@ Then run this command to start training
 During training, I started at increments of 50 iterations, then smaller increments until I noticed some overfitting (characters start getting stands that already exist with no variation). In my experience, the lowest-cost configuration to train the model without going out-of-memory was an AWS spot instance with at least 64GB memory (no GPU). I used r5n.2xlarge for training.
 
 ## Notes
-* The training data was gathered by scraping text from the fandom wiki (urls can be found in `stands_with_user.ndjson`). I left out the "appearance" section because the model would focus only on the appeareance of the stand.
+* The training data was gathered by scraping text from the fandom wiki (urls can be found in `stands_with_user.ndjson`). I left out the "appearance" section because the model would focus only on the appearance of the stand.
 * If you like a stand and want it to add more to to the description, you can just enter `Stand Name: [text]` in the input and the model will add more information.
